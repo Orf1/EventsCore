@@ -5,7 +5,7 @@ messages:
   leave-message: "&f[&4-&f] %player% &7has left the server!"
 
   no-permission-message: "&4You do not have permission to use this command!"
-  invalid-player: "Invalid player: %player%"
+  invalid-player: "Player %player% not found!"
 
   bypass-gamemode: "You are currently bypassing gamemode!"
   bypass-build: "You are currently bypassing build!"

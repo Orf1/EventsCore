@@ -83,12 +83,17 @@ public class BypassCommand implements CommandExecutor {
                                     if (!main.getBypassGamemodeList().contains(target)){
                                         main.getBypassGamemodeList().add(target);
                                         //TODO enabled target bypass message
+                                        String message = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("bypass-enabled-gamemode-other").replace("%player%", player.getDisplayName()));
+                                        player.sendMessage(message);
                                     }else {
                                         main.getBypassGamemodeList().remove(target);
                                         //TODO disabled target bypass message
+                                        String message = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("bypass-disabled-gamemode-other").replace("%player%", player.getDisplayName()));
+                                        player.sendMessage(message);
                                     }
                                 } else{
-                                    //TODO invalid player
+                                    String message = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("messages.invalid-player").replace("%player%", player.getDisplayName()));
+                                    player.sendMessage(message);
                                 }
                             } else {
                                 String message = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("messages.no-permission"));
@@ -101,12 +106,17 @@ public class BypassCommand implements CommandExecutor {
                                     if (!main.getBypassBuildList().contains(target)){
                                         main.getBypassBuildList().add(target);
                                         //TODO enabled target bypass message
+                                        String message = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("bypass-enabled-build-other").replace("%player%", player.getDisplayName()));
+                                        player.sendMessage(message);
                                     }else {
                                         main.getBypassBuildList().remove(target);
                                         //TODO disabled target bypass message
+                                        String message = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("bypass-disabled-build-other").replace("%player%", player.getDisplayName()));
+                                        player.sendMessage(message);
                                     }
                                 } else{
-                                    //TODO invalid player
+                                    String message = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("messages.invalid-player").replace("%player%", player.getDisplayName()));
+                                    player.sendMessage(message);
                                 }
                             } else {
                                 String message = ChatColor.translateAlternateColorCodes('&', main.getConfig().getString("messages.no-permission"));
