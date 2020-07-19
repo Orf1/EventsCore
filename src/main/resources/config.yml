@@ -1,0 +1,6 @@
+config-version: 1.0.0
+
+mesages:
+  join-message: "&f[&a+&f] %player% &7has joined the server!"
+  leave-message: "&f[&4-&f] %player% &7has left the server!"
+  no-permission-message: "&4You do not have permission to use this command"
