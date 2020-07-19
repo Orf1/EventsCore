@@ -1,6 +1,27 @@
 config-version: 1.0.0
 
-mesages:
+messages:
   join-message: "&f[&a+&f] %player% &7has joined the server!"
   leave-message: "&f[&4-&f] %player% &7has left the server!"
-  no-permission-message: "&4You do not have permission to use this command"
+
+  no-permission-message: "&4You do not have permission to use this command!"
+  invalid-player: "Invalid player: %player%"
+
+  bypass-gamemode: "You are currently bypassing gamemode!"
+  bypass-build: "You are currently bypassing build!"
+  bypass-both: "You are currently bypassing gamemode and build!"
+  bypass-none: "You are not currently bypassing anything!"
+
+  bypass-enable-gamemode: "You are now bypassing gamemode!"
+  bypass-disable-gamemode: "You are no longer bypassing gamemode!"
+
+  bypass-enable-build: "You are now bypassing build!"
+  bypass-disable-build: "You are no longer bypassing build!"
+
+  invalid-usage-bypass: "Invalid usage! Please use /bypass [gamemode|build]"
+
+  bypass-enabled-gamemode-other: "You have enabled gamemode bypass for %player%"
+  bypass-disabled-gamemode-other: "You have disabled gamemode bypass for %player%"
+
+  bypass-enabled-build-other: "You have enabled build bypass for %player%"
+  bypass-disabled-build-other: "You have disabled build bypass for %player%"

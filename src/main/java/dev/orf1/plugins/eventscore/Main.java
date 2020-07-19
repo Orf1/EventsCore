@@ -28,7 +28,11 @@ public final class Main extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         initiateFiles();
+
         Bukkit.getPluginManager().registerEvents(new EventManager(), this);
+
+        getCommand("eventscore").setExecutor(new EventsCoreCommand());
+        getCommand("bypass").setExecutor(new BypassCommand());
 
         if (!getDescription().getVersion().equalsIgnoreCase(getConfig().getString("config-version"))){
             String msg = "Outdated config version! This may cause various issues. This can be fixed by removing the existing config and letting it re-generate.";
